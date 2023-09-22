@@ -1,7 +1,7 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+date: "2023-09-14"
+description: "The codes on this page tell you how to write a markdown file."
 ---
 
 This is my first post on my new fake blog! How exciting!

@@ -19,7 +19,8 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
+            telegram
           }
         }
       }
@@ -37,17 +38,21 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
+        width={75}
+        height={75}
+        quality={100}
         alt="Profile picture"
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          Written by <strong className="blue">{author.name}</strong> {author?.summary || null}
+          <br/>
+          <a href={`${social?.github || ``}`}>
+            See my projects
+          </a>
+          <span className="space" />
+          <a href={`${social?.telegram || ``}`}>
+            Contact
           </a>
         </p>
       )}

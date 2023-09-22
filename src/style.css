@@ -236,6 +236,18 @@ a:focus {
   text-decoration: none;
 }
 
+/* space */
+
+.space{
+  display:inline;
+  padding-right:20px;
+}
+
+/* strong */
+strong.blue {
+  color: var(--color-primary)
+}
+
 /* Custom classes */
 
 .global-wrapper {
